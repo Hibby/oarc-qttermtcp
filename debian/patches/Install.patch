@@ -1,0 +1,10 @@
+--- a/QtTermTCP.pro
++++ b/QtTermTCP.pro
+@@ -40,4 +40,7 @@
+ 
+ RC_ICONS = QtTermTCP.ico
+ 
++target.patch += debian/qttermtcp/usr/bin
++INSTALLS += target
++
+ QMAKE_LFLAGS += -no-pie
