@@ -9,7 +9,7 @@ Standards-Version: 4.6.0.0
 Vcs-Browser: https://salsa.debian.org/debian-hamradio-team/qsstv
 Vcs-Git: https://salsa.debian.org/debian-hamradio-team/qsstv.git
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtTermTCP.html
-Build-Depends: debhelper-compat (= 13), qtbase5-dev, qt5-qmake, libqt5serialport5-dev
+Build-Depends: debhelper-compat (= 12), qtbase5-dev, qt5-qmake, libqt5serialport5-dev
 Rules-Requires-Root: no
 
 Package: qttermtcp
