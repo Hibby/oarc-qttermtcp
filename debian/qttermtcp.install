@@ -1,1 +1,3 @@
 QtTermTCP /opt/oarc/QtTermTCP
+qttermtcp.desktop /usr/share/applications
+QtTermTCP.ico /usr/share/qttermtcp
