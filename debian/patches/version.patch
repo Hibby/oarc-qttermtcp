@@ -1,0 +1,10 @@
+--- a/QtTermTCP.cpp
++++ b/QtTermTCP.cpp
+@@ -1,6 +1,6 @@
+ // Qt Version of BPQTermTCP
+ 
+-#define VersionString "0.0.0.66"
++#define VersionString "0.0.0.69"
+ 
+ // .12 Save font weight
+ // .13 Display incomplete lines (ie without CR)
