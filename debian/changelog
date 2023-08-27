@@ -1,5 +1,5 @@
-qttermtcp (0.0.0.69-1) UNRELEASED; urgency=medium
+qttermtcp (0.0.0.69-1) unstable; urgency=medium
 
   * Initial release. 
 
- -- Dave Hibberd <d@vehibberd.com>  Sun, 27 Aug 2023 17:59:42 +0100
+ -- Dave Hibberd <d@vehibberd.com>  Sun, 27 Aug 2023 19:26:09 +0100
