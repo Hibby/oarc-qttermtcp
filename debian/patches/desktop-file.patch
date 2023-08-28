@@ -1,0 +1,16 @@
+--- /dev/null
++++ b/qttermtcp.desktop
+@@ -0,0 +1,13 @@
++[Desktop Entry]
++Version=1.0
++Comment=QtTermTCP ax25 client
++Exec=/opt/oarc/QtTermTCP/QtTermTCP
++GenericName=QtTermTPC
++Icon=qttermtcp
++Name=QtTermTCP
++NoDisplay=false
++StartupNotify=true
++Terminal=false
++Type=Application
++Categories=Education;HamRadio
++X-AppImage-Version=1
