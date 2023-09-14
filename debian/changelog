@@ -1,3 +1,9 @@
+qttermtcp (0.0.0.69-2~bpo11+1) bullseye; urgency=medium
+
+  * Rebuild for bullseye.
+
+ -- Dave Hibberd <d@vehibberd.com>  Thu, 14 Sep 2023 23:08:04 +0100
+
 qttermtcp (0.0.0.69-2) unstable; urgency=medium
 
   * Added new icon 
