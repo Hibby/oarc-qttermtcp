@@ -2,8 +2,8 @@
 Version=1.0
 Comment=QtTermTCP ax25 client
 Exec=/opt/oarc/QtTermTCP/QtTermTCP
-GenericName=QtTermTPC
-Icon=qttermtcp
+GenericName=QtTermTCP
+Icon=QtTermTCP
 Name=QtTermTCP
 NoDisplay=false
 StartupNotify=true
