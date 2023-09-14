@@ -4,10 +4,9 @@ Priority: optional
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
 Uploaders:
  Dave Hibberd <d@vehibberd.com>,
- Christoph Berg <myon@debian.org>,
 Standards-Version: 4.6.0.0
-Vcs-Browser: https://salsa.debian.org/debian-hamradio-team/qsstv
-Vcs-Git: https://salsa.debian.org/debian-hamradio-team/qsstv.git
+Vcs-Browser:
+Vcs-Git:
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtTermTCP.html
 Build-Depends: debhelper-compat (= 13), qtbase5-dev, qt5-qmake, libqt5serialport5-dev
 Rules-Requires-Root: no
