@@ -1,5 +1,11 @@
+qttermtcp (0.0.0.69-2) UNRELEASED; urgency=medium
+
+  * Added new icon 
+
+ -- Dave Hibberd <d@vehibberd.com>  Thu, 14 Sep 2023 22:56:25 +0100
+
 qttermtcp (0.0.0.69-1~bpo12+1) bookworm; urgency=medium
 
   * Initial release. 
 
- -- Dave Hibberd <d@vehibberd.com>  Sun, 27 Aug 2023 17:59:42 +0100
+ -- Dave Hibberd <d@vehibberd.com>  Sun, 27 Aug 2023 19:26:09 +0100
