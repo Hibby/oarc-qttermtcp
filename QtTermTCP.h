@@ -2,8 +2,8 @@
 
 #include <QMainWindow>
 #include "ui_QtTermTCP.h"
-//#include "ui_AGWParams.h"
-//#include "ui_AGWConnect.h"
+#include "ui_AlertSetup.h"
+#include "ui_YAPPRxSize.h"
 #include "ui_ColourConfig.h"
 #include "ui_VARAConfig.h"
 #include "ui_KISSConfig.h"
@@ -28,6 +28,8 @@
 #include <QMenuBar>
 #include <QProcess>
 #include <QtSerialPort/QSerialPort>
+#include <QtMultimedia/QSound>
+#include <QtMultimedia/QSoundEffect>
 
 #define MAXHOSTS 16
 #define MAXPORTS 64
@@ -83,8 +85,10 @@ public:
 	int MonSaveLen;
 	char MonSave[4096];
 
-	char PortMonString[1024];		// 32 ports 32 Bytes
-	unsigned long long portmask;
+	char PortMonString[2048];		// 64 ports 32 Bytes
+	uint64_t portmask;
+	int EnableMonitor;
+	int mlocaltime;
 	int mtxparam;
 	int mcomparam;
 	int monUI;
@@ -109,6 +113,11 @@ public:
 	char pageBuffer[4096];
 	QBasicTimer timer;
 
+	int sessNo;			// Used to create unique log filename;
+	bool LogMonitor;
+	QFile * monLogfile;
+	char * monSpan;
+
 protected:
 
 	void timerEvent(QTimerEvent *event) override;
@@ -130,17 +139,22 @@ public:
 	QtTermTCP(QWidget *parent = NULL);
 	void closeEvent(QCloseEvent * event);
 	static void setFonts();
+
 	~QtTermTCP();
 
 private slots:
 	void Disconnect();
 	void doYAPPSend();
 	void doYAPPSetRX();
+	void doYAPPSetSize();
+	void sizeaccept();
+	void sizereject();
 	void menuChecked();
 	void Connect();
 	void displayError(QAbstractSocket::SocketError socketError);
 	void readyRead();
-
+	void showContextMenu(const QPoint & point);
+	void autoConnectChecked();
 	void LreturnPressed(Ui_ListenSession * LUI);
 	void LDisconnect(Ui_ListenSession * LUI);
 	void SetupHosts();
@@ -148,6 +162,17 @@ private slots:
 	void KISSTimerSlot();
 	void ListenSlot();
 	void AGWSlot();
+	void AlertSlot();
+	void chooseInboundWAV();
+	void chooseBellsWAV();
+	void chooseIntervalWAV();
+	void chooseAlertWAV();
+	void testInboundWAV();
+	void testBellsWAV();
+	void testIntervalWAV();
+	void testAlertWAV();
+	void alertAccept();
+	void alertReject();
 	void VARASlot();
 	void KISSSlot();
 	void deviceaccept();
@@ -244,6 +269,7 @@ private:
 	QAction *AGWAction;
 	QAction *VARAAction;
 	QAction *KISSAction;
+	QAction *AlertAction;
 	QAction *quitAction;
 
 	QList<myTcpSocket*>  _sockets;
@@ -265,15 +291,19 @@ extern "C"
 	void setTraceOff(Ui_ListenSession * Sess);
 	void SetPortMonLine(int i, char * Text, int visible, int enabled);
 	void SaveSettings();
-	void myBeep();
+	void myBeep(QString * WAV);
 	void YAPPSendFile(Ui_ListenSession *  Sess, char * FN);
 	int SocketSend(Ui_ListenSession * Sess, char * Buffer, int len);
 	void SendTraceOptions(Ui_ListenSession * Sess);
 	int SocketFlush(Ui_ListenSession * Sess);
 	extern void mySleep(int ms);
 	extern void setTraceOff(Ui_ListenSession * Sess);
+	void GetKeyWordFile();
 }
 
+extern QString ConnectWAV;
+extern QString BellWAV;
+extern QString AlertWAV;
 
 char * strlop(char * buf, char delim);
 extern "C" void setMenus(int State);
