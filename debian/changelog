@@ -1,4 +1,11 @@
-qttermtcp (0.0.0.73-1) UNRELEASED; urgency=medium
+qttermtcp (0.0.0.73-1~bpo12+1) bookworm; urgency=medium
+
+  * Rebuild for bookworm.
+  * 
+
+ -- Dave Hibberd <d@vehibberd.com>  Fri, 08 Dec 2023 16:07:35 +0000
+
+qttermtcp (0.0.0.73-1) unstable; urgency=medium
 
   * Upstream refresh 
 
