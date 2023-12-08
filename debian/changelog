@@ -1,3 +1,11 @@
+qttermtcp (0.0.0.69-3) unstable; urgency=medium
+
+  * Upstream is finally .69, whoops
+  * removed version.patch
+  * added qt5multimedia-dev as a dependency
+
+ -- Dave Hibberd <d@vehibberd.com>  Sat, 14 Oct 2023 23:12:15 +0100
+
 qttermtcp (0.0.0.69-2) unstable; urgency=medium
 
   * Added new icon 
