@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Comment=QtTermTCP ax25 client
-Exec=/opt/oarc/QtTermTCP/QtTermTCP
+Exec=QtTermTCP
 GenericName=QtTermTCP
 Icon=QtTermTCP
 Name=QtTermTCP
