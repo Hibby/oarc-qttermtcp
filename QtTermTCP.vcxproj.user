@@ -1,6 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerWorkingDirectory>$(APPDATA)</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerWorkingDirectory>..\..\..\..\..\DevProgs\BPQ32</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
   <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <QtLastBackgroundBuild>2022-05-19T07:28:47.9186341Z</QtLastBackgroundBuild>
   </PropertyGroup>
@@ -8,15 +15,15 @@
     <QtLastBackgroundBuild>2022-05-19T07:28:58.9302359Z</QtLastBackgroundBuild>
   </PropertyGroup>
   <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <QtLastBackgroundBuild>2023-04-12T13:14:53.1644359Z</QtLastBackgroundBuild>
+    <QtLastBackgroundBuild>2023-10-14T13:14:56.5532991Z</QtLastBackgroundBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="QtSettings">
-    <QtLastBackgroundBuild>2023-02-08T10:47:28.1396474Z</QtLastBackgroundBuild>
+    <QtLastBackgroundBuild>2023-10-14T13:14:56.7231497Z</QtLastBackgroundBuild>
   </PropertyGroup>
   <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <QtLastBackgroundBuild>2023-03-06T08:27:08.3742630Z</QtLastBackgroundBuild>
+    <QtLastBackgroundBuild>2023-10-14T13:14:55.9367569Z</QtLastBackgroundBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="QtSettings">
-    <QtLastBackgroundBuild>2023-02-08T10:47:27.7430420Z</QtLastBackgroundBuild>
+    <QtLastBackgroundBuild>2023-10-14T13:14:56.2561805Z</QtLastBackgroundBuild>
   </PropertyGroup>
 </Project>

@@ -1,14 +1,22 @@
-qttermtcp (0.0.0.69-2~bpo12+1) bookworm; urgency=medium
+qttermtcp (0.0.0.73-1) UNRELEASED; urgency=medium
 
-  * Rebuild for bookworm.
+  * Upstream refresh 
 
- -- Dave Hibberd <d@vehibberd.com>  Thu, 14 Sep 2023 23:04:00 +0100
+ -- Dave Hibberd <d@vehibberd.com>  Fri, 08 Dec 2023 15:48:42 +0000
 
-qttermtcp (0.0.0.69-2) UNRELEASED; urgency=medium
+qttermtcp (0.0.0.69-3) unstable; urgency=medium
+
+  * Upstream is finally .69, whoops
+  * removed version.patch
+  * added qt5multimedia-dev as a dependency
+
+ -- Dave Hibberd <d@vehibberd.com>  Sat, 14 Oct 2023 23:12:15 +0100
+
+qttermtcp (0.0.0.69-2) unstable; urgency=medium
 
   * Added new icon 
 
- -- Dave Hibberd <d@vehibberd.com>  Thu, 14 Sep 2023 22:56:25 +0100
+ -- Dave Hibberd <d@vehibberd.com>  Thu, 14 Sep 2023 23:06:02 +0100
 
 qttermtcp (0.0.0.69-1~bpo12+1) bookworm; urgency=medium
 

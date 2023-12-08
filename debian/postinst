@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+TT="/opt/oarc/QtTermTCP"
+
+if [ -d $TT ]; then
+	rm -rf /opt/oarc/QtTermTCP
+fi
