@@ -1,3 +1,10 @@
+qttermtcp (0.0.0.73-1~bpo11+1) bullseye; urgency=medium
+
+  * Rebuild for bullseye.
+  * 
+
+ -- Dave Hibberd <d@vehibberd.com>  Fri, 08 Dec 2023 16:09:45 +0000
+
 qttermtcp (0.0.0.73-1) unstable; urgency=medium
 
   * Upstream refresh 
