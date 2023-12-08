@@ -1,3 +1,9 @@
+qttermtcp (0.0.0.73-jammy1) jammy; urgency=medium
+
+  * Rebuild for jammy.
+
+ -- Dave Hibberd <d@vehibberd.com>  Fri, 08 Dec 2023 16:11:06 +0000
+
 qttermtcp (0.0.0.73-1) unstable; urgency=medium
 
   * Upstream refresh 
